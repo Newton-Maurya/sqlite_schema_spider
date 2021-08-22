@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload SQLite File</title>
+    <style>
+        *,
+        html {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #489c91;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form {
+            width: 200px;
+            padding: 50px;
+            display: block;
+            margin: 200px auto;
+        }
+
+        #file {
+            margin: 20px 0px;
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 17px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="/api/json_data" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
