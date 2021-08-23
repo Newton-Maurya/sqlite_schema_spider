@@ -202,7 +202,7 @@ app.post('/api/json_data', upload.single('file'), async (req, res) => {
 
 
 app.listen(port, () => {
-    console.log("Application runnin gon port 3000 !");
+    console.log("Application running on port 1999 !");
 });
 
 
