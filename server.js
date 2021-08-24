@@ -189,7 +189,7 @@ app.post('/api/json_data', upload.single('file'), async (req, res) => {
             let file = `./database/${fileArr[0]}`;
             fs.unlink(file, (err, seccess) => {
                 if (err) {
-                    console.log(err);
+//                     console.log(err);
                 }
             })
         }
